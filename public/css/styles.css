@@ -2,43 +2,41 @@ body{
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.form-control, .select2-container--default .select2-search--dropdown .select2-search__field, .typeahead.tt-hint, .typeahead.tt-input {
-    display: block;
-    width: 100%;
-    padding: .469rem .8rem;
-    font-size: .875rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #000;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    appearance: none;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+/*** Start: Tabs ***/
+.nav-tabs .nav-link{
+    border-radius: 0;
+}
+.nav-tabs .nav-link{
+    background: rgb(224, 224, 224);
+    color: #202020;
+    font-weight: 500;
+}
+.nav-tabs .nav-link.active{
+    border-top: 3px solid var(--primary);
+    color: var(--primary);
+}
+.tab-content .table thead{
+    background: rgb(236, 236, 236);
+}
+/*** End: Tabs ***/
+
+.table td {
+    padding: 0 0.9375rem;
+    height: 40px;
 }
 
-.form-control:focus, .select2-container--default .select2-search--dropdown .select2-search__field:focus, .typeahead.tt-hint:focus, .typeahead.tt-input:focus {
-    color: #000;
-    background-color: #fff;
-    border-color: var(--primary);
-    outline: 0;
-    box-shadow: none;
+.font-500{
+    font-weight: 500;
 }
-.btn{
-    font-weight: 400;
-    padding: .469rem .8rem;
-    line-height: 1.5;
-    border-radius: .25rem;
+.font-13{
+    font-size: 13px !important;
+}
+h6 .feather{
+    width: 16px;
 }
 
-/*** Select 2 ***/
-.select2-container .select2-selection--single {
-    height: 35px !important;
-}
-.select2-container--default .select2-selection--single .select2-selection__rendered {
-    line-height: 16px !important;
-}
-.select2-container--default .select2-selection--single .select2-selection__arrow b {
-    border-style: none !important;
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

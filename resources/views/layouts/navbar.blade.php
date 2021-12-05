@@ -208,7 +208,7 @@
                     <div class="dropdown-body">
                         <ul class="profile-nav p-0 pt-3">
                             <li class="nav-item">
-                                <a href="../../pages/general/profile.html" class="nav-link">
+                                <a href="#" class="nav-link">
                                     <i data-feather="user"></i>
                                     <span>Profile</span>
                                 </a>
@@ -226,7 +226,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="javascript:;" class="nav-link">
+                                <a href="{{ route('logout') }}" class="nav-link">
                                     <i data-feather="log-out"></i>
                                     <span>Log Out</span>
                                 </a>

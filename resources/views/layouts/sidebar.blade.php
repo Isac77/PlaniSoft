@@ -19,22 +19,10 @@
             </li>
             <li class="nav-item nav-category">Configuración General</li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse" href="#empleador" role="button" aria-expanded="false"
-                    aria-controls="tables">
+                <a href="{{ route('empleador.index') }}" class="nav-link">
                     <i class="link-icon" data-feather="user-check"></i>
                     <span class="link-title">Empleador</span>
-                    <i class="link-arrow" data-feather="chevron-down"></i>
                 </a>
-                <div class="collapse" id="empleador">
-                    <ul class="nav sub-menu">
-                        <li class="nav-item">
-                            <a href="{{ route('empleador.create') }}" class="nav-link">Crear</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('empleador.show') }}" class="nav-link">Consultar</a>
-                        </li>
-                    </ul>
-                </div>
             </li>
             <li class="nav-item">
                 <a href="{{ route('concepto.index') }}" class="nav-link">

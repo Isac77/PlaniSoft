@@ -11,11 +11,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::prefix('empleador')->name('empleador.')->group(function () {
-    Route::get('/crear', 'EmpleadorController@create')->name('create');
-    Route::get('/consultar', 'EmpleadorController@show')->name('show');
-});
+Route::post('/login', 'AuthController@login')->name('login');
+Route::post('/register', 'AuthController@register')->name('register');
+Route::get('/logout', 'AuthController@logout')->name('logout');
 
-Route::prefix('concepto')->name('concepto.')->group(function () {
-    Route::get('/conceptos', 'ConceptoController@index')->name('index');
-});
+Route::resource('empleador', 'EmpleadorController');
+
+Route::resource('concepto', 'ConceptoController');

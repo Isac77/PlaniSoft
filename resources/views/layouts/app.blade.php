@@ -8,12 +8,14 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
-    <link rel="stylesheet" href="../assets/vendors/core/core.css">
-    <link rel="stylesheet" href="../assets/fonts/feather-font/css/iconfont.css">
-    <link rel="stylesheet" href="../assets/vendors/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="shortcut icon" href="../assets/images/favicon.png" />
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="/assets/vendors/core/core.css">
+    <link rel="stylesheet" href="/assets/fonts/feather-font/css/iconfont.css">
+    <link rel="stylesheet" href="/assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/images/favicon.png" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/floating-message.css">
+    <link rel="stylesheet" href="/css/form-elements.css">
     @stack('css')
 </head>
 
@@ -28,10 +30,13 @@
             @include('layouts.footer')
         </div>
     </div>
-
-    <script src="../assets/vendors/core/core.js"></script>
-    <script src="../assets/vendors/feather-icons/feather.min.js"></script>
-    <script src="../assets/js/template.js"></script>
+    <div class="floating-message" id="floating-message">
+        <div class="floating-message-content d-flex justify-content-between align-items-center"></div>
+    </div>
+    <script src="/assets/vendors/core/core.js"></script>
+    <script src="/assets/vendors/feather-icons/feather.min.js"></script>
+    <script src="/assets/js/template.js"></script>
+    <script src="/js/utils/floating-message.js"></script>
     @stack('js')
 </body>
 
