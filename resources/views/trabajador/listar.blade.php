@@ -12,8 +12,8 @@
             <div class="card">
                 <div class="card-body">
                     <h6 class="card-title">Trabajadores</h6>
-                    <a class="btn btn-outline-primary btn-icon-text  mb-3" id="nuevoTrab" href="{{route('trabajador.nuevo')}}" role="button"><i class="btn-icon-prepend" data-feather="plus-circle"></i>Crear Nuevo Trabajador</a>
-                    <p class="card-description">Se muestran los trabajadores de <a href="#"> INVERSIONES S.A.C.</a></p>
+                    <a class="btn btn-outline-primary btn-icon-text  mb-3 col-sm-2" id="nuevoTrab" href="{{route('trabajador.nuevo')}}" role="button"><i class="btn-icon-prepend" data-feather="plus-circle"></i>Crear Nuevo Trabajador</a>
+                    <p class="card-description">Se muestran los trabajadores de <a href="#"> <strong>INVERSIONES S.A.C.</strong></a></p>
 
                     <div class="table-responsive">
                         <table id="dataTableExample" class="table">
@@ -60,12 +60,21 @@
 
     @push('css')
 
+    <!-- DataTables -->
+    <link rel="stylesheet" href="/assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
 
         {{-- Styles for this page        --}}
         <link rel="stylesheet" href="../assets/css/workerStyles.css">
     @endpush
-    @push('js').
+    @push('js')
 
+
+    <!-- plugin js for this page -->
+    <script src="/assets/vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="/assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+
+    <!-- custom js for this page -->
+    <script src="/assets/js/data-table.js"></script>
 
     @endpush
 @endsection

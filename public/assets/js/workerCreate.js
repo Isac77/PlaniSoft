@@ -810,7 +810,8 @@ $('#finishTrab').click(function (){
             confirmButtonText: 'Sí, Registrar',
             cancelButtonText: 'No, Modificar!',
             reverseButtons: true,
-            backdrop: false,
+            
+            
 
         }).then((result) => {
             if (result.value) {
@@ -903,7 +904,7 @@ $('#finishTrab').click(function (){
     // SAVING DATA LAB TRAB
     var saveDL = $("#saveDL");
     saveDL.click(function (){
-        const swalWithBootstrapButtons = Swal.mixin({
+        const Swal = Swal.mixin({
             customClass: {
                 confirmButton: 'btn btn-success',
                 cancelButton: 'btn btn-danger mr-2'
@@ -911,7 +912,7 @@ $('#finishTrab').click(function (){
             buttonsStyling: false,
         })
 
-        swalWithBootstrapButtons.fire({
+        Swal.fire({
             title: '¿Está seguro?',
             text: "Los datos seran registrados",
             icon: 'question',
@@ -920,7 +921,8 @@ $('#finishTrab').click(function (){
             confirmButtonText: 'Sí, Registrar',
             cancelButtonText: 'No, Modificar!',
             reverseButtons: true,
-            backdrop: false,
+            allowOutsideClick: false,
+            backdrop: false
 
         }).then((result) => {
             if (result.value) {
@@ -984,20 +986,22 @@ $('#finishTrab').click(function (){
                         p_CodSituacionTrabajador: p_CodSituacionTrabajador
                     },
                     success: function (){
-                        swalWithBootstrapButtons.fire(
+                        Swal.fire(
                             'Datos Guardados',
                             'Los datos Laborales fueron registrados',
                             'success'
 
                         )
+                        
                     },
                     error: function (){
-                        swalWithBootstrapButtons.fire(
+                        Swal.fire(
                             'Error al Guardar',
                             'Los datos de NO fueron registrados!, Intentar de nuevo',
                             'warning'
 
                         )
+                        
                     }
                 });
 

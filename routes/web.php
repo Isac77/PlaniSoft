@@ -20,9 +20,6 @@ Route::resource('empleador', 'EmpleadorController');
 //ruta concepto
 Route::resource('concepto', 'ConceptoController');
 
-Route::prefix('concepto')->name('concepto.')->group(function () {
-    Route::get('/conceptos', 'ConceptoController@index')->name('index');
-});
 
 //Trabajadores
 Route::prefix('trabajador')->name('trabajador.')->group(function () {
