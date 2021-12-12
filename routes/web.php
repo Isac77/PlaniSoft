@@ -19,5 +19,6 @@ Route::resource('empleador', 'EmpleadorController');
 
 Route::resource('concepto', 'ConceptoController');
 
+//mis rutas
 Route::get('/nueva-declaracion', 'DeclaracionController@new')->name('dec.new');
 Route::get('/declaraciones-registradas', 'DeclaracionController@all')->name('dec.all');
