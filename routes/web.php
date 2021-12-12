@@ -10,13 +10,14 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
+//rutas auth
 Route::post('/login', 'AuthController@login')->name('login');
 Route::post('/register', 'AuthController@register')->name('register');
 Route::get('/logout', 'AuthController@logout')->name('logout');
 
+//ruta empleador
 Route::resource('empleador', 'EmpleadorController');
-
+//ruta concepto
 Route::resource('concepto', 'ConceptoController');
 
 //mis rutas
