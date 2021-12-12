@@ -14,6 +14,7 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
+        view()->share('name', '978456132');
     }
 
     /**

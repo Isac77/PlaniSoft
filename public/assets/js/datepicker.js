@@ -5,10 +5,12 @@ $(function() {
     var date = new Date();
     var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
     $('#datePickerExample').datepicker({
-      format: "mm/dd/yyyy",
+      format: "dd/mm/yyyy",
       todayHighlight: true,
       autoclose: true
     });
     $('#datePickerExample').datepicker('setDate', today);
+
   }
+
 });

@@ -4,7 +4,13 @@ $(function() {
   $("#wizard").steps({
     headerTag: "h2",
     bodyTag: "section",
-    transitionEffect: "slideLeft"
+    transitionEffect: "slideLeft",
+      labels: {
+          finish: "Guardar",
+          next: "Siguiente",
+          previous: "Anterior",
+          loading: "Cargando ..."
+      }
   });
 
   $("#wizardVertical").steps({

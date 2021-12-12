@@ -9,8 +9,16 @@ $(function() {
       ],
       "iDisplayLength": 10,
       "language": {
-        search: ""
+        search: "Buscar",
+          lengthMenu:    "Mostrando _MENU_ Registros",
+          paginate: {
+              first:      "Primero",
+              previous:   "Anterior",
+              next:       "Siguiente",
+              last:       "Último"
+          }
       }
+
     });
     $('#dataTableExample').each(function() {
       var datatable = $(this);

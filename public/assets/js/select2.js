@@ -1,7 +1,7 @@
 $(function() {
   'use strict'
 
-  if ($(".js-example-basic-single").length) {
+  if ($(".select-busqueda").length) {
     $(".js-example-basic-single").select2();
   }
   if ($(".js-example-basic-multiple").length) {

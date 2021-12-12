@@ -8,7 +8,7 @@
                     <h4 class="card-title">Select 2</h4>
                     <div class="form-group">
                         <label>Single select box using select 2</label>
-                        <select class="js-example-basic-single w-100">
+                        <select class="js-example-basic-single  form-control ">
                             <option value="TX">Texas</option>
                             <option value="NY">New York</option>
                             <option value="FL">Florida</option>

@@ -35,6 +35,43 @@
                         </li>
                     </ul>
                 </div>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#trabajador" role="button" aria-expanded="false"
+                   aria-controls="tables">
+                    <i class="link-icon" data-feather="users"></i>
+                    <span class="link-title">Trabajadores</span>
+                    <i class="link-arrow" data-feather="chevron-down"></i>
+                </a>
+                <div class="collapse" id="trabajador">
+                    <ul class="nav sub-menu">
+                        <li class="nav-item">
+                            <a href="{{ route('trabajador.show') }}" class="nav-link">Ver Trabajadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('trabajador.nuevo') }}" class="nav-link">Nuevo Trabajador</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" href="#derechohab" role="button" aria-expanded="false"
+                   aria-controls="tables">
+                    <i class="link-icon" data-feather="user-plus"></i>
+                    <span class="link-title">Derecho Habientes</span>
+                    <i class="link-arrow" data-feather="chevron-down"></i>
+                </a>
+                <div class="collapse" id="derechohab">
+                    <ul class="nav sub-menu">
+                        <li class="nav-item">
+                            <a href="{{ route('derechohab.verdh') }}" class="nav-link">Ver Derecho Hab.</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('derechohab.registrardh') }}" class="nav-link">Registrar Derecho Hab.</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
             <li class="nav-item">
                 <a href="{{ route('concepto.index') }}" class="nav-link">

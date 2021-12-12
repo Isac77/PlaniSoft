@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="shortcut icon" href="../assets/images/favicon.png" />
     <link rel="stylesheet" href="../css/styles.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
     @stack('css')
 </head>
 
@@ -32,6 +34,13 @@
     <script src="../assets/vendors/core/core.js"></script>
     <script src="../assets/vendors/feather-icons/feather.min.js"></script>
     <script src="../assets/js/template.js"></script>
+
+
+    <!-- plugin js for this page -->
+    <script src="../assets/vendors/datatables.net/jquery.dataTables.js"></script>
+    <script src="../assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+    <!-- custom js for this page -->
+    <script src="../assets/js/data-table.js"></script>
     @stack('js')
 </body>
 

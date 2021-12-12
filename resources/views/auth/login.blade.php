@@ -10,7 +10,7 @@
                 </div>
                 <div class="col-md-8 pl-md-0">
                     <div class="auth-form-wrapper px-4 py-5">
-                        <a href="/" class="noble-ui-logo d-block mb-2">Noble<span>UI</span></a>
+                        <a href="/" class="noble-ui-logo d-block mb-2">Plani<span>Soft</span></a>
                         <h5 class="text-muted font-weight-normal mb-4">¡Bienvenido de nuevo! Ingrese a su cuenta.</h5>
                         <form class="forms-sample cmxform">
                             <div class="form-group">
@@ -18,8 +18,8 @@
                                 <input type="text" class="form-control" id="defaultconfig" placeholder="ruc" maxlength="11">
                             </div>
                             <div class="form-group">
-                                <label for="password">Contraseña</label>
-                                <input type="password" class="form-control" id="password" 
+                                <label for="password">CONTRASEÑA</label>
+                                <input type="password" class="form-control" id="password"
                                 placeholder="&#183;&#183;&#183;&#183;&#183;&#183;&#183;&#183;">
                             </div>
                             <div class="mt-3">
