@@ -9,6 +9,7 @@
             <span></span>
         </div>
     </div>
+    
     <div class="sidebar-body">
         <ul class="nav">
             <li class="nav-item">
