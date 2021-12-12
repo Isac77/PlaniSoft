@@ -13,7 +13,7 @@
                         <div class="cover-body d-flex justify-content-between align-items-center">
                             <div>
                                 <img class="profile-pic" src="https://via.placeholder.com/100x100" alt="profile">
-                                <span class="profile-name">Amiah Burton</span>
+                                <span class="profile-name">Trabajador</span>
                             </div>
                             <div class="d-none d-md-block">
                                 <button class="btn btn-dark btn-icon-text btn-edit-profile">
