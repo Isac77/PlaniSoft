@@ -41,10 +41,10 @@
                 <div class="collapse" id="declaraciones">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Nueva declaración</a>
+                            <a href="{{ route('dec.new') }}" class="nav-link">Nueva declaración</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Declaraciones registradas</a>
+                            <a href="{{ route('dec.all') }}" class="nav-link">Declaraciones registradas</a>
                         </li>
                     </ul>
                 </div>

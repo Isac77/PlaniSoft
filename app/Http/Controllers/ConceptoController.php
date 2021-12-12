@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Empleador;
+use App\EmpleadorConcepto;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class ConceptoController extends Controller
@@ -36,7 +39,13 @@ class ConceptoController extends Controller
      */
     public function store(Request $request)
     {
-        return response()->json($request, 200);
+        DB::select("call sp_update_empleador_concepto(?)", array($request->codigo));
+        if ($request->ok != null) {
+            foreach ($request->ok as $key => $value) {
+                EmpleadorConcepto::where('Codigo', '=', $key)->update(['isActive' => $value == 'on' ? 1 : 0]);
+            }
+        }
+        return response()->json("ok", 200);
     }
 
     /**
@@ -47,7 +56,8 @@ class ConceptoController extends Controller
      */
     public function show($codigo)
     {
-        $conceptos = DB::table('TPS_CONCEPTOS')->where('CodGrupo', $codigo)->get();
+        $conceptos = DB::table('TAB_EMPLEADOR_CONCEPTOS AS EC')->join('TPS_CONCEPTOS AS C', 'C.Codigo', '=', 'EC.Codigo')
+            ->where('C.CodGrupo', $codigo)->get();
         return response()->json($conceptos, 200);
     }
 

@@ -18,3 +18,6 @@ Route::get('/logout', 'AuthController@logout')->name('logout');
 Route::resource('empleador', 'EmpleadorController');
 
 Route::resource('concepto', 'ConceptoController');
+
+Route::get('/nueva-declaracion', 'DeclaracionController@new')->name('dec.new');
+Route::get('/declaraciones-registradas', 'DeclaracionController@all')->name('dec.all');

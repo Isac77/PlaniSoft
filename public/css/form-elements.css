@@ -22,9 +22,19 @@
     padding: .469rem 1.2rem;
     line-height: 1.5;
     border-radius: .25rem;
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
 .btn .icon{
     width: 20px;
+}
+.btn.btn-sm{
+    padding: .369rem .8rem;
+    font-size: 13px;
+}
+.btn.btn-sm .icon{
+    width: 18px;
 }
 /*** End: Buttons ***/
 

@@ -30,8 +30,13 @@
             @include('layouts.footer')
         </div>
     </div>
-    <div class="floating-message" id="floating-message">
-        <div class="floating-message-content d-flex justify-content-between align-items-center"></div>
+    <div class="progress-container" id="progress">
+        <div class="progress-content">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div>Procesando, por favor espere ...</div>
+        </div>
     </div>
     <script src="/assets/vendors/core/core.js"></script>
     <script src="/assets/vendors/feather-icons/feather.min.js"></script>

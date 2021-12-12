@@ -1,36 +1,25 @@
-/*** Start: Mensaje Flotante ***/
-.floating-message{
-    background: #f4f4f41c;
-    transition: all .3s cubic-bezier(.4,0,.2,1);
+.progress-container{
+    background: #d1d1d194;
+    z-index: 99999;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -9;
-}
-.floating-message-content{
-    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+    display: none;
+    align-items: center;
+    justify-content: center;
     transition: all .3s cubic-bezier(.4,0,.2,1);
-    background: #323232;
-    padding: 14px 24px;
-    min-width: 288px;
-    max-width: 568px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    bottom: -100%;
 }
-.floating-message.active{
-    z-index: 9999;
+.progress-container.active{
+    display: flex;
 }
-.floating-message.active .floating-message-content{
-    bottom: 0;
-}
-@media(max-width: 500px){
-    .floating-message-content{
-        width: 100%;
-        padding: 20px 1rem;
-    }
+.progress-content{
+    padding: 15px 10px;
+    background: #fff;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 6px 0px rgba(135,135,135,0.75);
 }
