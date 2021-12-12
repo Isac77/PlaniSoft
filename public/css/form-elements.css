@@ -1,0 +1,89 @@
+.form-control::placeholder{
+    color: #444;
+}
+.form-group label {
+    font-size: 0.865rem;
+}
+.form-check {
+    display: inline;
+}
+.form-check .form-check-label{
+    display: inline;
+}
+.error{
+    color: var(--danger);
+    font-size: .775rem;
+    font-weight: 500;
+}
+
+/*** Start: Buttons ***/
+.btn{
+    font-weight: 400;
+    padding: .469rem 1.2rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.btn .icon{
+    width: 20px;
+}
+.btn.btn-sm{
+    padding: .369rem .8rem;
+    font-size: 13px;
+}
+.btn.btn-sm .icon{
+    width: 18px;
+}
+/*** End: Buttons ***/
+
+.form-control, .select2-container--default .select2-search--dropdown .select2-search__field, .typeahead.tt-hint, .typeahead.tt-input {
+    display: block;
+    width: 100%;
+    padding: .469rem .8rem;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #aaa;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control:focus, .select2-container--default .select2-search--dropdown .select2-search__field:focus, .typeahead.tt-hint:focus, .typeahead.tt-input:focus {
+    color: #000;
+    background-color: #fff;
+    border-color: var(--primary);
+    outline: 0;
+    box-shadow: none;
+}
+.select2-container{
+    display: flex !important;
+    width: 100% !important;
+}
+.select2-container .selection{
+    width: 100%;
+}
+select.form-control, select{
+    border: 1px solid #aaa;
+    border-radius: .25rem;
+    color: #444;
+}
+select.form-control{
+    appearance: auto;
+}
+
+/*** Select 2 ***/
+.select2-container .select2-selection--single {
+    height: 35px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 16px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-style: none !important;
+}

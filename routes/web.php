@@ -10,11 +10,15 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+//rutas auth
+Route::post('/login', 'AuthController@login')->name('login');
+Route::post('/register', 'AuthController@register')->name('register');
+Route::get('/logout', 'AuthController@logout')->name('logout');
 
-Route::prefix('empleador')->name('empleador.')->group(function () {
-    Route::get('/crear', 'EmpleadorController@create')->name('create');
-    Route::get('/consultar', 'EmpleadorController@show')->name('show');
-});
+//ruta empleador
+Route::resource('empleador', 'EmpleadorController');
+//ruta concepto
+Route::resource('concepto', 'ConceptoController');
 
 Route::prefix('concepto')->name('concepto.')->group(function () {
     Route::get('/conceptos', 'ConceptoController@index')->name('index');
@@ -58,3 +62,6 @@ Route::prefix('derecho-hab')->name('derechohab.')->group(function () {
     Route::get('/verdh', 'DerechohabController@showDerechoHab')->name('verdh');
     Route::get('/registrardh', 'DerechohabController@createDerechoHab')->name('registrardh');
 });
+//mis rutas
+Route::get('/nueva-declaracion', 'DeclaracionController@new')->name('dec.new');
+Route::get('/declaraciones-registradas', 'DeclaracionController@all')->name('dec.all');

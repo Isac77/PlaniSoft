@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="shortcut icon" href="../assets/images/favicon.png" />
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/form-elements.css">
 </head>
 
 <body>
